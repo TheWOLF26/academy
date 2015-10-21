@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/21 14:46:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/21 15:19:19 by anflorea         ###   ########.fr       */
+/*   Created: 2015/10/21 15:18:17 by anflorea          #+#    #+#             */
+/*   Updated: 2015/10/21 15:18:54 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <string.h>
-
-/* TODO - remove this before deployment */
-
-# include <stdio.h>
-
-/* ------------------------------------ */
-
-size_t	ft_strlen(const char *s);
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-
-#endif
+int		ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
+}
