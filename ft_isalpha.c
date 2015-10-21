@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/21 14:46:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/21 15:10:19 by anflorea         ###   ########.fr       */
+/*   Created: 2015/10/21 15:08:57 by anflorea          #+#    #+#             */
+/*   Updated: 2015/10/21 15:09:54 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <string.h>
-
-/* TODO - remove this before deployment */
-
-# include <stdio.h>
-
-/* ------------------------------------ */
-
-size_t	ft_strlen(const char *s);
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
-
-#endif
+int		ft_isalpha(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
+}
