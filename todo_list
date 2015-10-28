@@ -1,0 +1,31 @@
+functions	done	tested
+
+memset		
+bzero		
+memcpy		
+memccpy		
+memmove		
+memchr		
+memcmp		
+strlen		ok
+strdup		ok
+strcpy		ok
+strncpy		ok
+strcat		ok
+strncat		
+strlcat		
+strchr		ok
+strrchr		ok
+strstr		
+strnstr		
+strcmp		ok
+strncmp		ok
+atoi		ok
+isalpha		ok
+isdigit		ok
+isalnum		ok
+isascii		ok
+isprint		ok
+toupper		ok
+tolower		ok
+
