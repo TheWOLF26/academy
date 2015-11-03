@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/21 15:24:52 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 16:19:12 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/03 16:29:37 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/03 16:53:46 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// TODO test this shit
-
-int		ft_toupper(int c)
+void	*memcpy(void *dst, const void *src, size_t n)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		*(unsigned char*)(dst + i) = *(unsigned char*)(src + i);
+		i++;
+	}
+	return (dst);
 }

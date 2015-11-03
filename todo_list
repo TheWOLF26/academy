@@ -1,31 +1,56 @@
-functions	done	tested
+functions		done	tested
 
-memset		
-bzero		
-memcpy		
-memccpy		
-memmove		
-memchr		
-memcmp		
-strlen		ok
-strdup		ok
-strcpy		ok
-strncpy		ok
-strcat		ok
-strncat		
-strlcat		
-strchr		ok
-strrchr		ok
-strstr		
-strnstr		
-strcmp		ok
-strncmp		ok
-atoi		ok
-isalpha		ok
-isdigit		ok
-isalnum		ok
-isascii		ok
-isprint		ok
-toupper		ok
-tolower		ok
+memset			ok
+bzero			ok
+memcpy			ok
+memccpy			ok
+memmove			
+memchr			ok
+memcmp			ok
+strlen			ok
+strdup			ok
+strcpy			ok
+strncpy			ok
+strcat			ok
+strncat			
+strlcat			
+strchr			ok
+strrchr			ok
+strstr			
+strnstr			
+strcmp			ok
+strncmp			ok
+atoi			ok
+isalpha			ok
+isdigit			ok
+isalnum			ok
+isascii			ok
+isprint			ok
+toupper			ok
+tolower			ok
 
+
+ft_memalloc	
+ft_memdel
+ft_strnew
+ft_strdel
+ft_strclr
+ft_striter
+ft_striteri
+ft_strmap
+ft_strmapi
+ft_strequ
+ft_strnequ
+ft_strsub
+ft_strjoin
+ft_strtrim
+ft_strsplit
+ft_itoa
+ft_putchar		ok
+ft_putstr		ok
+ft_putendl		ok
+ft_putnbr		ok
+ft_putchar_fd
+ft_putstr_fd
+ft_putendl_fd
+ft_putnbr_fd	

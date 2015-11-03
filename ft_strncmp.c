@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/23 12:10:45 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/23 12:15:50 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/03 16:18:35 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int		i;
+	size_t	i;
 
 	i = 0;
 	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)

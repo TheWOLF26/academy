@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/28 16:10:41 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/28 16:25:45 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/03 16:18:49 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
-	int		i;
+	size_t	i;
 	int		ok;
 
 	i = 0;
