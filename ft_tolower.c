@@ -6,13 +6,11 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 15:27:29 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/21 15:28:30 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 16:01:26 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// TODO test dis shit
 
 int		ft_tolower(int c)
 {

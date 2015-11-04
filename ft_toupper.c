@@ -6,13 +6,11 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 15:24:52 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 16:19:12 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 16:01:37 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// TODO test this shit
 
 int		ft_toupper(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 16:56:35 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 16:59:05 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 15:12:33 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (*(unsigned char*)(s + i) == (unsigned char)c)
-			return (s + i);
+			return (void*)(s + i);
 		i++;
 	}
 	return (NULL);

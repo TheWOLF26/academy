@@ -6,13 +6,13 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 16:23:45 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 16:52:28 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 15:24:51 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 

@@ -6,13 +6,13 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 15:43:05 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/21 15:47:33 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 15:16:01 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_len(char *str)
+int		ft_len(const char *str)
 {
 	int		i;
 

@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/28 18:14:18 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/04 15:14:57 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/04 14:47:31 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/04 14:51:12 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	int		i;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s1[i] != '\0')
 		i++;
-	while (s[i] != c && i >= 0)
-		i--;
-	if (s[i] == c)
-		return (char*)(s + i);
-	else
-		return (NULL);
+	j = 0;
+	while (s2[j] != '\0' && j < n)
+	{
+		s1[i] = s2[j];
+		j++;
+		i++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }

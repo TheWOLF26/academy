@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 17:30:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 17:35:29 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/04 14:09:03 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar2(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 }
 
 void	ft_putnbr(int n)

@@ -4,7 +4,7 @@ memset			ok
 bzero			ok
 memcpy			ok
 memccpy			ok
-memmove			
+memmove			ok
 memchr			ok
 memcmp			ok
 strlen			ok
@@ -12,12 +12,12 @@ strdup			ok
 strcpy			ok
 strncpy			ok
 strcat			ok
-strncat			
-strlcat			
+strncat			ok
+strlcat			ok
 strchr			ok
 strrchr			ok
-strstr			
-strnstr			
+strstr			ok
+strnstr			ok
 strcmp			ok
 strncmp			ok
 atoi			ok
@@ -50,7 +50,7 @@ ft_putchar		ok
 ft_putstr		ok
 ft_putendl		ok
 ft_putnbr		ok
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
+ft_putchar_fd	ok
+ft_putstr_fd	ok
+ft_putendl_fd	ok
 ft_putnbr_fd	
