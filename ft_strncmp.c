@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/23 12:10:45 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/03 16:18:35 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 17:10:35 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	if (i == n)
 		return (0);
-	return (s1[i] - s2[i]);
+	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
 }

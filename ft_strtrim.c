@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 15:46:24 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 15:54:55 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 17:20:15 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ static int	ft_getlen(char const *s)
 		i++;
 		len++;
 	}
-	i--;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+	if (i)
+		i--;
+	while ((s[i] == ' ' || s[i] == '\n' || s[i] == '\t') && len)
 	{
 		i--;
 		len--;
@@ -40,6 +41,7 @@ char		*ft_strtrim(char const *s)
 	int		i;
 	int		len;
 	char	*new;
+	int		start;
 
 	len = ft_getlen(s);
 	new = (char*)malloc(sizeof(char) * (len + 1));

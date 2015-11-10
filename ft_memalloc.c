@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 15:13:56 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 15:15:26 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 16:46:07 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,10 @@
 
 void	*ft_memalloc(size_t size)
 {
-	size_t	i;
-	void	*s;
+	void *mem;
 
-	s = (void*)malloc(size);
-	if (s)
-	{
-		i = 0;
-		while (i < size)
-		{
-			s[i] = 0;
-			i++;
-		}
-	}
-	return (s);
+	if (!(mem = (void*)malloc(sizeof(*mem) * (size))) || !size)
+		return (NULL);
+	mem = ft_memset(mem, 0, size);
+	return (mem);
 }

@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/23 12:30:45 by anflorea          #+#    #+#             */
-/*   Updated: 2015/10/23 12:34:25 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 17:17:05 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strcpy(char *dst, const char *src)
 		i++;
 	}
 	dst[i] = '\0';
-	return (0);
+	return (dst);
 }

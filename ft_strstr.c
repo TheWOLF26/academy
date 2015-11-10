@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/04 14:16:05 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/04 15:15:16 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 17:15:49 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strstr(const char *s1, const char *s2)
 	int		aux;
 
 	i = 0;
+	if (!(*s2))
+		return (char*)(s1);
 	while (s1[i] != '\0')
 	{
 		j = 0;

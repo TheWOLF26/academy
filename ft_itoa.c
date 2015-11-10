@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 16:11:12 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 16:34:02 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 16:44:40 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ char		*ft_itoa(int n)
 	long	aux;
 	char	*new;
 	int		sgn;
-	int		i;
 
 	aux = n;
 	sgn = 0;

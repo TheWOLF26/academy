@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 16:35:40 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 16:36:40 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/10 16:43:55 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (aux > 9)
 		ft_putnbr_fd(aux / 10, fd);
-	ft_putchar(aux % 10 + '0', fd);
+	ft_putchar_fd(aux % 10 + '0', fd);
 }
