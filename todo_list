@@ -30,27 +30,27 @@ toupper			ok		ok
 tolower			ok		ok
 
 
-ft_memalloc		ok
-ft_memdel		ok
-ft_strnew		ok
-ft_strdel		ok
-ft_strclr		ok
-ft_striter		
-ft_striteri		
-ft_strmap		
-ft_strmapi		
-ft_strequ		ok
-ft_strnequ		ok
-ft_strsub		ok
-ft_strjoin		ok
-ft_strtrim		ok
-ft_strsplit		
-ft_itoa			ok
-ft_putchar		ok
-ft_putstr		ok
-ft_putendl		ok
-ft_putnbr		ok
-ft_putchar_fd	ok
-ft_putstr_fd	ok
-ft_putendl_fd	ok
-ft_putnbr_fd	ok
+ft_memalloc		ok		ok
+ft_memdel		ok		ok
+ft_strnew		ok		ok
+ft_strdel		ok		ok
+ft_strclr		ok		ok
+ft_striter		ok		ok
+ft_striteri		ok		ok
+ft_strmap		ok		ok
+ft_strmapi		ok		ok
+ft_strequ		ok		ok
+ft_strnequ		ok		ok
+ft_strsub		ok		ok
+ft_strjoin		ok		ok
+ft_strtrim		ok		ok
+ft_strsplit		ok		ok
+ft_itoa			ok		ok
+ft_putchar		ok		ok
+ft_putstr		ok		ok
+ft_putendl		ok		ok
+ft_putnbr		ok		ok
+ft_putchar_fd	ok		ok
+ft_putstr_fd	ok		ok
+ft_putendl_fd	ok		ok
+ft_putnbr_fd	ok		ok
