@@ -1,51 +1,51 @@
 functions		done	tested
 
-memset			ok
-bzero			ok
-memcpy			ok
-memccpy			ok
-memmove			ok
-memchr			ok
-memcmp			ok
-strlen			ok
-strdup			ok
-strcpy			ok
-strncpy			ok
-strcat			ok
-strncat			ok
-strlcat			ok
-strchr			ok
-strrchr			ok
-strstr			ok
-strnstr			ok
-strcmp			ok
-strncmp			ok
-atoi			ok
-isalpha			ok
-isdigit			ok
-isalnum			ok
-isascii			ok
-isprint			ok
-toupper			ok
-tolower			ok
+memset			ok		ok
+bzero			ok		ok
+memcpy			ok		ok
+memccpy			ok		ok
+memmove			ok		ok
+memchr			ok		ok
+memcmp			ok		ok
+strlen			ok		ok
+strdup			ok		ok
+strcpy			ok		ok
+strncpy			ok		ok
+strcat			ok		ok
+strncat			ok		ok
+strlcat			ok		ok
+strchr			ok		ok
+strrchr			ok		ok
+strstr			ok		ok
+strnstr			ok		ok
+strcmp			ok		ok
+strncmp			ok		ok
+atoi			ok		ok
+isalpha			ok		ok
+isdigit			ok		ok
+isalnum			ok		ok
+isascii			ok		ok
+isprint			ok		ok
+toupper			ok		ok
+tolower			ok		ok
 
 
-ft_memalloc	
-ft_memdel
-ft_strnew
-ft_strdel
-ft_strclr
-ft_striter
-ft_striteri
-ft_strmap
-ft_strmapi
-ft_strequ
-ft_strnequ
-ft_strsub
-ft_strjoin
-ft_strtrim
-ft_strsplit
-ft_itoa
+ft_memalloc		ok
+ft_memdel		ok
+ft_strnew		ok
+ft_strdel		ok
+ft_strclr		ok
+ft_striter		
+ft_striteri		
+ft_strmap		
+ft_strmapi		
+ft_strequ		ok
+ft_strnequ		ok
+ft_strsub		ok
+ft_strjoin		ok
+ft_strtrim		ok
+ft_strsplit		
+ft_itoa			ok
 ft_putchar		ok
 ft_putstr		ok
 ft_putendl		ok
@@ -53,4 +53,4 @@ ft_putnbr		ok
 ft_putchar_fd	ok
 ft_putstr_fd	ok
 ft_putendl_fd	ok
-ft_putnbr_fd	
+ft_putnbr_fd	ok

@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/03 17:17:33 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 15:55:51 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/10 15:20:54 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/10 15:23:20 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s)
+int		ft_strequ(char const *s1, char const *s2)
 {
 	int		i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		ft_putchar(s[i]);
+		if (s1[i] != s2[i])
+			return (0);
 		i++;
 	}
+	if (s1[i] == s2[i])
+		return (1);
+	return (0);
 }

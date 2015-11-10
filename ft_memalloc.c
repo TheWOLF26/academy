@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/03 17:17:33 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 15:55:51 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/10 15:13:56 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/10 15:15:26 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s)
+void	*ft_memalloc(size_t size)
 {
-	int		i;
+	size_t	i;
+	void	*s;
 
-	i = 0;
-	while (s[i] != '\0')
+	s = (void*)malloc(size);
+	if (s)
 	{
-		ft_putchar(s[i]);
-		i++;
+		i = 0;
+		while (i < size)
+		{
+			s[i] = 0;
+			i++;
+		}
 	}
+	return (s);
 }

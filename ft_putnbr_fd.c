@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/04 16:06:02 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/04 16:06:34 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/10 16:35:40 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/10 16:36:40 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	long	aux;
 
+	aux = n;
+	if (aux < 0)
+	{
+		aux *= -1;
+		ft_putchar_fd('-', fd);
+	}
+	if (aux > 9)
+		ft_putnbr_fd(aux / 10, fd);
+	ft_putchar(aux % 10 + '0', fd);
 }
