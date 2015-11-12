@@ -60,6 +60,6 @@ libft_bonus		ok		ok
 super_bonus:
 ft_bubble_sort	ok		ok
 ft_qsort		ok		ok
-ft_gcd			
-ft_strrev		
+ft_gcd			ok		ok
+ft_strrev		ok		ok
 
