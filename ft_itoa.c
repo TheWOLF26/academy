@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 16:11:12 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 16:44:40 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/12 21:18:07 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ static char	*ft_tochar(long nbr, int len, int sgn)
 	int		i;
 	char	*new;
 
-	i = 0;
 	new = (char*)malloc(sizeof(char) * (len + sgn + 1));
 	if (new)
 	{
@@ -52,7 +51,6 @@ static char	*ft_tochar(long nbr, int len, int sgn)
 			if (sgn == 1)
 				new[i++] = '-';
 			new[i] = '\0';
-
 		}
 	}
 	return (new);

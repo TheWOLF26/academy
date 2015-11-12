@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 14:46:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/10 19:44:01 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/12 20:57:08 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,12 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+/*
+ *
+ * */
+
+void	ft_bubble_sort(int *v, size_t size, int (*cmp)(int, int));
+void	ft_qsort(int *v, size_t size, int (*cmp)(int, int));
 
 #endif

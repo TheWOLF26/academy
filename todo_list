@@ -54,3 +54,12 @@ ft_putchar_fd	ok		ok
 ft_putstr_fd	ok		ok
 ft_putendl_fd	ok		ok
 ft_putnbr_fd	ok		ok
+
+libft_bonus		ok		ok
+
+super_bonus:
+ft_bubble_sort	ok		ok
+ft_qsort		ok		ok
+ft_gcd			
+ft_strrev		
+
