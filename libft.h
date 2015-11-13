@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 14:46:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/13 16:56:15 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/13 17:01:21 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
-
-/* TODO - remove this before deployment */
-
-# include <stdio.h>
-
-/* ------------------------------------ */
 
 typedef struct		s_list
 {
