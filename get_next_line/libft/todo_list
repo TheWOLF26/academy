@@ -1,0 +1,65 @@
+functions		done	tested
+
+memset			ok		ok
+bzero			ok		ok
+memcpy			ok		ok
+memccpy			ok		ok
+memmove			ok		ok
+memchr			ok		ok
+memcmp			ok		ok
+strlen			ok		ok
+strdup			ok		ok
+strcpy			ok		ok
+strncpy			ok		ok
+strcat			ok		ok
+strncat			ok		ok
+strlcat			ok		ok
+strchr			ok		ok
+strrchr			ok		ok
+strstr			ok		ok
+strnstr			ok		ok
+strcmp			ok		ok
+strncmp			ok		ok
+atoi			ok		ok
+isalpha			ok		ok
+isdigit			ok		ok
+isalnum			ok		ok
+isascii			ok		ok
+isprint			ok		ok
+toupper			ok		ok
+tolower			ok		ok
+
+
+ft_memalloc		ok		ok
+ft_memdel		ok		ok
+ft_strnew		ok		ok
+ft_strdel		ok		ok
+ft_strclr		ok		ok
+ft_striter		ok		ok
+ft_striteri		ok		ok
+ft_strmap		ok		ok
+ft_strmapi		ok		ok
+ft_strequ		ok		ok
+ft_strnequ		ok		ok
+ft_strsub		ok		ok
+ft_strjoin		ok		ok
+ft_strtrim		ok		ok
+ft_strsplit		ok		ok
+ft_itoa			ok		ok
+ft_putchar		ok		ok
+ft_putstr		ok		ok
+ft_putendl		ok		ok
+ft_putnbr		ok		ok
+ft_putchar_fd	ok		ok
+ft_putstr_fd	ok		ok
+ft_putendl_fd	ok		ok
+ft_putnbr_fd	ok		ok
+
+libft_bonus		ok		ok
+
+super_bonus:
+ft_bubble_sort	ok		ok
+ft_qsort		ok		ok
+ft_gcd			ok		ok
+ft_strrev		ok		ok
+
