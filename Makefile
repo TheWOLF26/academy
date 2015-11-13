@@ -6,7 +6,7 @@
 #    By: anflorea <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/04 15:06:24 by anflorea          #+#    #+#              #
-#    Updated: 2015/11/12 21:56:32 by anflorea         ###   ########.fr        #
+#    Updated: 2015/11/13 16:56:31 by anflorea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRCS = ft_lstiter.c ft_putendl.c ft_strequ.c ft_strnstr.c ft_lstmap.c \
 	   ft_strncmp.c ft_lstadd.c ft_memset.c ft_strcpy.c ft_strncpy.c \
 	   ft_lstdel.c ft_putchar.c ft_strdel.c ft_strnequ.c ft_lstdelone.c \
 	   ft_putchar_fd.c ft_strdup.c ft_strnew.c ft_bubble_sort.c ft_qsort.c \
-	   ft_gcd.c ft_strrev.c
+	   ft_gcd.c ft_strrev.c ft_strcapitalize.c
 
 OBJ = $(SRCS:.c=.o)
 

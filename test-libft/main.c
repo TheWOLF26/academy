@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/12 18:08:56 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/12 21:57:58 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/13 16:58:49 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ int		main(int argc, char **argv)
 	ft_putendl("Quick sort:");
 	ft_qsort(v, argc - 1, ft_intcmp);	
 	ft_print_tab(v, argc - 1);
+	str = ft_strdup(" asdd EReqdDa da EEQS  dasd ddqwedD  DDD aw!");
+	ft_putendl(ft_strcapitalize(str));
 	str = ft_strdup("Error!");
 	ft_putendl(ft_strrev(str));
 	ft_putnbr(ft_gcd(ft_atoi(argv[1]), ft_atoi(argv[2])));

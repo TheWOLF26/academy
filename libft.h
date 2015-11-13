@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 14:46:53 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/12 21:48:11 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/13 16:56:15 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,6 @@ void				ft_bubble_sort(int *v, size_t size, int (*cmp)(int, int));
 void				ft_qsort(int *v, size_t size, int (*cmp)(int, int));
 char				*ft_strrev(char *str);
 int					ft_gcd(int a, int b);
+char				*ft_strcapitalize(char *str);
 
 #endif
