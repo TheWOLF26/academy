@@ -6,13 +6,13 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/14 13:39:25 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/18 19:31:22 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/19 19:43:13 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void	ft_ls(void)
+void	ft_ls(flags)
 {
 	DIR				*dirp;
 	struct dirent	*dp;
@@ -34,14 +34,17 @@ int		is_flag(char *str)
 		i = 1;
 		while (str[i] != '\0')
 		{
-			if (ft_strchr(str[i], KNOWN_FLAGS))
-				
+			if (!ft_strchr(KNOWN_FLAGS, str[i]))
+				return (-1);
+			i++;
 		}
+		return (1);
 	}
-	return (0);
+	else
+		return (0);
 }
 
-void	flags_management(int argc, char **argv)
+char	flags_management(int argc, char **argv)
 {
 	int		i;
 	int		ok;
@@ -50,18 +53,22 @@ void	flags_management(int argc, char **argv)
 	ok = 1;
 	while (i < argc && ok)
 	{
-		if (is_flag(argv[i]))
+		if (is_flag(argv[i]) == 1)
 		{
 
 		}
 		else
 			ok = 0;
+		i++;
 	}
+	return (0);
 }
 
 int		main(int argc, char **argv)
 {
-	flags_management(argc, argv);
-	ft_ls();
+	char	flags;
+
+	flags = flags_management(argc, argv);
+	ft_ls(flags);
 	return (0);
 }
