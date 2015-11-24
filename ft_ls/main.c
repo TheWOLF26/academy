@@ -6,20 +6,27 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/14 13:39:25 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/19 19:43:13 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/23 14:28:59 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
+void	list_push_sort(t_list **begin_list, struct dirent *dp)
+{
+	
+}
+
 void	ft_ls(flags)
 {
 	DIR				*dirp;
 	struct dirent	*dp;
+	t_list			*begin;
 
 	dirp = opendir(".");
 	while ((dp = readdir(dirp)) != NULL)
 	{
+		list_push_sort(&begin, dp);
 		printf("%s\n", dp->d_name);
 	}
 	(void)closedir(dirp);

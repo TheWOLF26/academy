@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/14 13:31:32 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/18 19:31:18 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/23 13:48:31 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,15 @@
 // -----------------
 
 /*
- * ----Typedefs-----
+ * ----Structs------
  * */
 
+typedef struct		s_list
+{
+	struct s_list	*next;
+	struct s_list	*prev;
+	char			*name;
+}					t_list;
 
 // -----------------
 
