@@ -6,20 +6,42 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:13:46 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/24 19:58:19 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/25 17:24:01 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+void	ft_next_printf(va_list *ap, char *flag, int *value)
+{
+	int		len;
+
+	len = ft_strlen(flag);
+	if (ft_strcmp(flag, "%%") == 0)
+	{
+		ft_putchar('%');
+		(*value)++;
+	}
+	else if (ft_strchr(KNOWN_FLAGS, flag[len - 1]))
+	{
+		//ft_putendl("This is a correct flag!");
+		//ft_putendl(flag);
+	}
+}
 
 int		ft_findEndFlag(const char *str)
 {
 	int		i;
 
 	i = 1;
-	while (!(ft_strchr(KNOWN_FLAGS, str[i])) && str[i] != '\0')
+	while (ft_strchr(INNER_FLAGS, str[i]) && str[i] != '\0')
 		i++;
-	return (i);
+	if (ft_strchr(KNOWN_FLAGS, str[i]))
+		return (i);
+	else if (str[i] == '%' && str[i - 1] == '%')
+		return (i);
+	else
+		return (i - 1);
 }
 
 int		ft_inner_printf(va_list *ap, const char *format)
@@ -34,9 +56,8 @@ int		ft_inner_printf(va_list *ap, const char *format)
 		if (*format == '%')
 		{
 			end = ft_findEndFlag(format);
-			ft_putchar('\n');
 			flag = ft_strsub(format, 0, end + 1);
-			ft_putendl(flag);
+			ft_next_printf(ap, flag, &value);
 			format += end;
 		}
 		else

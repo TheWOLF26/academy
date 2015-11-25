@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:04:28 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/24 17:25:50 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/25 17:06:39 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 int		main(void)
 {
-	ft_printf("%dasdf%10d%%%#0-+2000xqwdas", 10, 20);
-	//ft_printf("\n\n%hh");
+	int		i;
+
+	i =  0;
+	ft_printf("%dasdf%10d%%%#0-+2000xqwd%hllas", 10, 20);
+	//i = printf("%0.3.jdaa", i);
+	//printf("\n\ni: %d", i);
+	printf("%.0d", 123);
 	return (0);
 }
