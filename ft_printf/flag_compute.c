@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   flag_compute.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/24 16:04:28 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/26 13:08:40 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/26 11:02:40 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/26 16:15:00 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		main(void)
+int		ft_compute_flag(va_list *ap, char *flag, t_arg args)
 {
-	long	i;
-
-	i =  0;
-	//ft_printf("%dasdf%10d%%%#0-+2000.20hdqwd%hll%+#lld%21203.3lc%02hhSas", 10, 20);
-	//i = printf("%0.3.jdaa", i);
-	//printf("\n\ni: %d", i);
-	printf("%p", &i);
+	
 	return (0);
 }

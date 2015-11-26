@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:10:02 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/25 17:24:12 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/26 11:26:19 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,6 @@
 # include <stdarg.h>
 # include "libft/libft.h"
 
-// TODO Remove this before deployment
-
-# include <stdio.h>
-
-// ---------------------------------
 
 // --------Defines--------------
 
@@ -57,7 +52,17 @@ typedef struct		s_arg
 // -------Prototypes-------
 
 int		ft_printf(const char *format, ...);
+int		ft_correct_flag(va_list *ap, char *flag);
+int		ft_compute_flag(va_list *ap, char *flag, t_arg args);
 
 // ------------------------
+
+// TODO Remove this before deployment
+
+# include <stdio.h>
+
+void	ft_print_test_targ(t_arg arg);
+
+// ---------------------------------
 
 #endif
