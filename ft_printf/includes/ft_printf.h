@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:10:02 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/26 17:25:04 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/27 17:55:06 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 // --------Defines--------------
 
-# define KNOWN_FLAGS "sSpdDioOuUxXcC"
+# define KNOWN_FLAGS "sSpdDioOuUxXcC%"
 # define INNER_FLAGS "0123456789.#hljz+- "
 
 // ------------------------------
@@ -55,6 +55,10 @@ int		ft_printf(const char *format, ...);
 int		ft_correct_flag(va_list *ap, char *flag);
 int		ft_compute_flag(va_list *ap, char *flag, t_arg args);
 int		compute_s_flag(va_list *ap, t_arg args);
+int		compute_c_flag(va_list *ap, t_arg args);
+int		compute_d_flag(va_list *ap, t_arg args);
+int		compute_p_flag(va_list *ap, t_arg args);
+int		compute_percent_flag(va_list *ap, t_arg args);
 
 // ------------------------
 

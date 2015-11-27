@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_percent_flag.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/28 18:08:39 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 16:41:54 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/27 17:50:56 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/27 17:54:05 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-char	*ft_strchr(const char *s, int c)
+int		compute_percent_flag(va_list *ap, t_arg args)
 {
-	int		i;
-
-	i = 0;
-	while (s[i] != c && s[i] != '\0')
-		i++;
-	if (s[i] == c)
-		return (char*)(s + i);
-	else
-		return (NULL);
+	ft_putchar('%');
+	(void)args;
+	(void)ap;
+	return (1);
 }

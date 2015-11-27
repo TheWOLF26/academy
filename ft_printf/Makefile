@@ -6,16 +6,13 @@
 #    By: anflorea <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:16:12 by anflorea          #+#    #+#              #
-#    Updated: 2015/11/26 17:31:43 by anflorea         ###   ########.fr        #
+#    Updated: 2015/11/27 17:09:06 by anflorea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = srcs/flag_compute.c \
-	   srcs/ft_printf.c \
-	   srcs/ft_s_flag.c \
-	   srcs/utils.c \
+SRCS = srcs/*.c \
 	   libft/*.c
 
 OBJ = *.o

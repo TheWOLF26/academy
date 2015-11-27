@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:13:46 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/26 17:45:20 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/27 18:18:48 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	ft_next_printf(va_list *ap, char *flag, int *value)
 	int		len;
 
 	len = ft_strlen(flag);
-	if (ft_strcmp(flag, "%%") == 0)
+	//if (ft_strcmp(flag, "%%") == 0 && ft_strlen(flag) == 2)
+	if (len > 1 && flag[0] == '%' && flag[len - 1] == '%')
 	{
 		ft_putchar('%');
 		(*value)++;
@@ -33,7 +34,9 @@ int		ft_findEndFlag(const char *str)
 	int		i;
 
 	i = 1;
-	while (ft_strchr(INNER_FLAGS, str[i]) && str[i] != '\0')
+	if (str[i] == '\0')
+		return (0);
+	while (ft_strchr(INNER_FLAGS, str[i]))
 		i++;
 	if (ft_strchr(KNOWN_FLAGS, str[i]))
 		return (i);

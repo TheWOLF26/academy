@@ -1,42 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_s_flag.c                                        :+:      :+:    :+:   */
+/*   ft_c_flag.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/26 16:54:09 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/26 17:16:39 by anflorea         ###   ########.fr       */
+/*   Created: 2015/11/27 16:55:29 by anflorea          #+#    #+#             */
+/*   Updated: 2015/11/27 17:23:47 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf.c"
 
-int		compute_s_flag(va_list *ap, t_arg args)
+int		compute_c_flag(va_list *ap, t_arg args)
 {
-	char	*text;
 	char	*spaces;
 	char	ch;
+	char	text;
 
-	text = va_arg(*ap, char *);
+	text = va_arg(*ap, int);
 	ch = ' ';
 	if (args.has_zero)
 		ch = '0';
-	if (args.width > ft_strlen(text))
+	if (args.width > 1)
 	{
-		spaces = ft_memalloc(args.width - ft_strlen(text) + 1);
-		spaces = ft_memset(spaces, ch, args.width - ft_strlen(text));
-		spaces[args.width - ft_strlen(text) + 1] = '\n';
+		spaces = ft_memalloc(args.width - 1);
+		spaces = ft_memset(spaces, ch, args.width - 1);
 		if (args.has_minus == 0)
 		{
+			ft_putchar(text);
 			ft_putstr(spaces);
-			ft_putstr(text);
 		}
 		else
 		{
-			ft_putstr(text);
 			ft_putstr(spaces);
+			ft_putchar(text);
 		}
+		return (args.width);
 	}
-	return (ft_strlen(text));
+	ft_putchar(text);
+	return (1);
 }
