@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 09:47:24 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 18:22:06 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 13:04:20 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,8 @@ int		ft_correct_flag(va_list *ap, char *flag)
 	{
 		ft_verif_has_flags(&flag, &args);
 		ft_verif_has_mod(&flag, &args);
-		ft_verif_precision(&flag, &args);
+		if (*flag != '0')
+			ft_verif_precision(&flag, &args);
 		if (ft_strchr(KNOWN_FLAGS, *flag))
 			value = ft_compute_flag(ap, flag, args);
 		flag++;

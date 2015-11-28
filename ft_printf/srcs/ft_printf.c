@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:13:46 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 18:18:48 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 12:56:36 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	ft_next_printf(va_list *ap, char *flag, int *value)
 	//if (ft_strcmp(flag, "%%") == 0 && ft_strlen(flag) == 2)
 	if (len > 1 && flag[0] == '%' && flag[len - 1] == '%')
 	{
+		// TODO compute inner flags of %%
 		ft_putchar('%');
 		(*value)++;
 	}

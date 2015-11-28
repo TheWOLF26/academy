@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 16:11:12 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/12 21:18:07 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 11:37:45 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,18 @@ char		*ft_itoa(int n)
 		aux *= -1;
 	}
 	new = ft_tochar(aux, ft_nrcif(aux), sgn);
+	if (new)
+		ft_strrevv(new);
+	return (new);
+}
+
+char		*ft_itoa_unsigned(unsigned int n)
+{
+	unsigned long	aux;
+	char			*new;
+
+	aux = n;
+	new = ft_tochar(aux, ft_nrcif(aux), 0);
 	if (new)
 		ft_strrevv(new);
 	return (new);

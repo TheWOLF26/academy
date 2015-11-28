@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 16:04:28 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 19:42:09 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 14:00:45 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ int		main(void)
 	//printf("\n\ni: %d", i);
 	//printf("% 5s", "sad");
 	s = NULL;
-	ft_printf("%-20s", "asfg");
+	ft_printf("%#29hh.3%d\n", -42);
+	printf("%#29hh.3%d\n", -42);
+	//printf("%ho\n", -42);
 	//printf("%p", 0);
 	return (0);
 }

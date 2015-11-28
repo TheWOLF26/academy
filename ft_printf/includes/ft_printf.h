@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:10:02 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 17:55:06 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 12:10:41 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,12 @@ int		ft_compute_flag(va_list *ap, char *flag, t_arg args);
 int		compute_s_flag(va_list *ap, t_arg args);
 int		compute_c_flag(va_list *ap, t_arg args);
 int		compute_d_flag(va_list *ap, t_arg args);
+int		compute_u_flag(va_list *ap, t_arg args);
 int		compute_p_flag(va_list *ap, t_arg args);
 int		compute_percent_flag(va_list *ap, t_arg args);
+int		compute_x_flag(va_list *ap, t_arg args);
+int		compute_X_flag(va_list *ap, t_arg args);
+int		compute_o_flag(va_list *ap, t_arg args);
 
 // ------------------------
 

@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:02:40 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/27 19:42:16 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/11/28 13:05:13 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,18 @@ int		try_char_flags(va_list *ap, char *flag, t_arg args)
 
 int		try_nbr_flags(va_list *ap, char *flag, t_arg args)
 {
-	if (*flag == 'd' || *flag == 'i' || *flag == 'u')
+	if (*flag == 'd' || *flag == 'i')
 		return (compute_d_flag(ap, args));
+	if (*flag == 'u')
+		return (compute_u_flag(ap, args));
 	if (*flag == 'p')
 		return (compute_p_flag(ap, args));
+	if (*flag == 'x')
+		return (compute_x_flag(ap, args));
+	if (*flag == 'X')
+		return (compute_X_flag(ap, args));
+	if (*flag == 'o')
+		return (compute_o_flag(ap, args));
 	return (0);
 }
 
