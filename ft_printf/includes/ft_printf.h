@@ -6,7 +6,7 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:10:02 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/28 14:20:45 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/12/03 13:28:44 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,24 @@ int		ft_correct_flag(va_list *ap, char *flag);
 int		ft_compute_flag(va_list *ap, char *flag, t_arg args);
 int		compute_s_flag(va_list *ap, t_arg args);
 int		compute_c_flag(va_list *ap, t_arg args);
+int		compute_C_flag(va_list *ap, t_arg args);
 int		compute_d_flag(va_list *ap, t_arg args);
 int		compute_u_flag(va_list *ap, t_arg args);
+int		compute_U_flag(va_list *ap, t_arg args);
 int		compute_p_flag(va_list *ap, t_arg args);
 int		compute_percent_flag(va_list *ap, t_arg args);
 int		compute_x_flag(va_list *ap, t_arg args);
+int		compute_x_long_flag(va_list *ap, t_arg args);
 int		compute_X_flag(va_list *ap, t_arg args);
 int		compute_o_flag(va_list *ap, t_arg args);
+int		compute_O_flag(va_list *ap, t_arg args);
+
+char	*get_integer(va_list *ap);
+char	*get_longint(va_list *ap);
+char	*get_intmax_t(va_list *ap);
+char	*get_size_t(va_list *ap);
+char	*get_unsigned(va_list *ap);
+char	*get_unsigned_long(va_list *ap);
 
 // ------------------------
 

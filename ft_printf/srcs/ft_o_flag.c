@@ -6,13 +6,13 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/28 12:05:39 by anflorea          #+#    #+#             */
-/*   Updated: 2015/11/28 12:12:25 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/12/03 13:14:39 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char	*itoa_base8(unsigned int nbr)
+char	*itoa_base8(unsigned long nbr)
 {
 	char	*new;
 	int		i;
@@ -38,7 +38,24 @@ int		compute_o_flag(va_list *ap, t_arg args)
 
 	nbr = va_arg(*ap, unsigned int);
 	text = itoa_base8(nbr);
-	if (args.has_hash == 1)
+	if (args.has_hash == 1 && nbr != 0)
+	{
+		ft_putstr("0");
+		ft_putstr(text);
+		return (1 + ft_strlen(text));
+	}
+	ft_putstr(text);
+	return (ft_strlen(text));
+}
+
+int		compute_O_flag(va_list *ap, t_arg args)
+{
+	unsigned long	nbr;
+	char			*text;
+
+	nbr = va_arg(*ap, unsigned long);
+	text = itoa_base8(nbr);
+	if (args.has_hash == 1 && nbr != 0)
 	{
 		ft_putstr("0");
 		ft_putstr(text);

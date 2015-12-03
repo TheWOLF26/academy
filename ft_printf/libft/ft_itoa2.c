@@ -6,13 +6,13 @@
 /*   By: anflorea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 16:11:12 by anflorea          #+#    #+#             */
-/*   Updated: 2015/12/03 12:45:22 by anflorea         ###   ########.fr       */
+/*   Updated: 2015/12/03 12:46:58 by anflorea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nrcif(unsigned long nbr)
+static int	ft_nrcif(long long nbr)
 {
 	int		i;
 
@@ -27,7 +27,7 @@ static int	ft_nrcif(unsigned long nbr)
 	return (i);
 }
 
-static char	*ft_tochar(unsigned long nbr, int len, int sgn)
+static char	*ft_tochar(unsigned long long nbr, int len, int sgn)
 {
 	int		i;
 	char	*new;
@@ -74,11 +74,11 @@ static void	ft_strrevv(char *str)
 	}
 }
 
-char		*ft_itoa(int n)
+char		*ft_itoa_long(long n)
 {
-	long	aux;
-	char	*new;
-	int		sgn;
+	long long	aux;
+	char		*new;
+	int			sgn;
 
 	aux = n;
 	sgn = 0;
@@ -92,7 +92,7 @@ char		*ft_itoa(int n)
 		ft_strrevv(new);
 	return (new);
 }
-
+/*
 char		*ft_itoa_unsigned(unsigned long n)
 {
 	unsigned long	aux;
@@ -103,4 +103,4 @@ char		*ft_itoa_unsigned(unsigned long n)
 	if (new)
 		ft_strrevv(new);
 	return (new);
-}
+}*/
